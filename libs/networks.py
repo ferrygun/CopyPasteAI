@@ -72,7 +72,7 @@ class U2NET:
             raise Exception("Unknown u2net model!")
         try:
             if self.torch.cuda.is_available():
-                net.load_state_dict(self.torch.load(os.path.join("models", name, name + '.pth')))
+                net.load_state_dict(self.torch.load(os.path.join('/content/gdrive/My Drive/models/u2net/u2net.pth')))
                 net.cuda()
             else:
                 net.load_state_dict(self.torch.load(os.path.join("models", name, name + '.pth'), map_location="cpu"))
