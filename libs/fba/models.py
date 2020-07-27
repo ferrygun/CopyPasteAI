@@ -47,7 +47,7 @@ def build_model(args):
 
     if(args.weights != 'default'):
         if torch.cuda.is_available():
-            sd = torch.load(args.weights)
+            sd = torch.load('/content/gdrive/My Drive/models/fba_matting/fba_matting.pth')
         else:
             sd = torch.load(args.weights, map_location="cpu")
 
