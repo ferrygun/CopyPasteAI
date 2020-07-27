@@ -4,3 +4,4 @@ pyscreenshot==1.0
 Pillow==7.1.2
 requests==2.23.0
 python-socketio==4.6.0
+Flask-SocketIO==4.3.1
