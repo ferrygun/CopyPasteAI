@@ -1,16 +1,10 @@
-/*
-var child_process = require('child_process');
-
-child_process.exec('fcopy.bat result.png', function(error, stdout, stderr) {
-    console.log(stdout);
-});
-*/
 "use strict";
 const fs = require('fs');
 const child_process = require('child_process');
 
-var socket = require('socket.io-client')('http://127.0.0.1:5000/');
+var socket = require('socket.io-client')('http://2384575c9487.ngrok.io/');
 socket.on('connect', function(){
+	console.log('connected');
 	socket.on('req', function(msg){
 		console.log(msg);
 
